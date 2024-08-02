@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  @apply transition-colors duration-100;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -25,4 +29,8 @@ span {
 .blueShadow:hover {
   box-shadow: 6px 6px 0 0 #4ade80;
   transform: translate(-3px,-3px);
+}
+
+.greenShadow{
+  box-shadow: 3px 3px 0 0 #4ade80;
 }

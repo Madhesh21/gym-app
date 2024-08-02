@@ -28,7 +28,7 @@ export default function ExerciseCard(props) {
 
       <div className='flex flex-col bg-slate-950 rounded gap-2'>
         {exercise.description.split("___").map((val) => {
-          return <div>{val}</div>;
+          return <div key={val}>{val}</div>;
         })}
       </div>
 
