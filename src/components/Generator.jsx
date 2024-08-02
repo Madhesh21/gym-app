@@ -9,7 +9,7 @@ function Header(props) {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex items-center justify-center gap-2">
-        <p className="text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-400">
+        <p className="text-3xl sm:text-4xl md:text-5xl font-semibold text-green-400">
           {index}
         </p>
         <h4 className="text-xl sm:text-2xl md:text-3xl">{title}</h4>
@@ -71,8 +71,8 @@ export default function Generator(props) {
                 setPoison(type);
               }}
               className={
-                "bg-slate-950 border  duration-200 px-4 hover:border-blue-600 py-3 rounded-lg " +
-                (type === poison ? " border-blue-600" : " border-blue-400")
+                "bg-slate-950 border  duration-200 px-4 hover:border-green-600 py-3 rounded-lg blueShadow" +
+                (type === poison ? " border-green-600" : " border-green-400")
               }
               key={typeIndex}
             >
@@ -86,7 +86,7 @@ export default function Generator(props) {
         title={"Lock on targets"}
         description={"Select the muscles judged for annihilation."}
       />
-      <div className="bg-slate-950  border border-solid border-blue-400 rounded-lg flex flex-col">
+      <div className="bg-slate-950  border border-solid border-green-400 rounded-lg flex flex-col">
         <button
           onClick={toggleModal}
           className="relative p-3 flex items-center justify-center"
@@ -109,8 +109,8 @@ export default function Generator(props) {
                   }}
                   key={muscleGroupIndex}
                   className={
-                    "hover:text-blue-400 duration-200 " +
-                    (muscles.includes(muscleGroup) ? " text-blue-400" : " ")
+                    "hover:text-green-400 duration-200" +
+                    (muscles.includes(muscleGroup) ? " text-green-400" : " ")
                   }
                 >
                   <p className="uppercase">
@@ -135,8 +135,8 @@ export default function Generator(props) {
                 setGoal(scheme);
               }}
               className={
-                "bg-slate-950 border  duration-200 hover:border-blue-600 py-3 rounded-lg px-4 " +
-                (scheme === goal ? " border-blue-600" : " border-blue-400")
+                "bg-slate-950 border  duration-200 hover:border-green-600 py-3 rounded-lg px-4 blueShadow " +
+                (scheme === goal ? " border-green-600" : " border-green-400")
               }
               key={schemeIndex}
             >

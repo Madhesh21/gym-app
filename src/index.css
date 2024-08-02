@@ -7,7 +7,9 @@ html{
 }
 
 *{
-  font-family: "Poppins", sans-serif;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 span {
@@ -16,11 +18,11 @@ span {
 }
 
 .blueShadow{
-  box-shadow: 3px 3px 0 0 #60a5fa;
+  box-shadow: 3px 3px 0 0 #4ade80;
   transition-duration: 200ms;
 }
 
 .blueShadow:hover {
-  box-shadow: 6px 6px 0 0 #60a5fa;
+  box-shadow: 6px 6px 0 0 #4ade80;
   transform: translate(-3px,-3px);
 }
